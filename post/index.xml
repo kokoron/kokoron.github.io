@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on EN.Core</title>
-    <link>https://blog.enw.jp/post/index.xml</link>
+    <link>http://www.en-graphic.com/post/index.xml</link>
     <description>Recent content in Posts on EN.Core</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2017 EN Graphic Design | Follow on &lt;a href=&#34;https://twitter.com/kokoron&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 01 Apr 2017 13:44:12 +0900</lastBuildDate>
-    <atom:link href="https://blog.enw.jp/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.en-graphic.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ブログ作ってみたよ</title>
-      <link>https://blog.enw.jp/post/first/</link>
+      <link>http://www.en-graphic.com/post/first/</link>
       <pubDate>Sat, 01 Apr 2017 13:44:12 +0900</pubDate>
       
-      <guid>https://blog.enw.jp/post/first/</guid>
+      <guid>http://www.en-graphic.com/post/first/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;でブログ作ってみた。&lt;/p&gt;
 
 &lt;p&gt;以前のブログから記事を移してみたが、あれからもう１年半経ってる。。。&lt;/p&gt;
@@ -24,16 +24,16 @@
     
     <item>
       <title>初めてのPhoenix</title>
-      <link>https://blog.enw.jp/post/phoenix/</link>
+      <link>http://www.en-graphic.com/post/phoenix/</link>
       <pubDate>Thu, 12 Nov 2015 00:45:30 +0900</pubDate>
       
-      <guid>https://blog.enw.jp/post/phoenix/</guid>
+      <guid>http://www.en-graphic.com/post/phoenix/</guid>
       <description>&lt;h1 id=&#34;phoenix&#34;&gt;Phoenix&lt;/h1&gt;
 
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://blog.enw.jp/images/phoenix.png&#34; alt=&#34;phoenix&#34; /&gt;
+        &lt;img src=&#34;http://www.en-graphic.com/images/phoenix.png&#34; alt=&#34;phoenix&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -103,7 +103,7 @@ $ mix phoenix.server
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://blog.enw.jp/images/screenshot.png&#34; alt=&#34;スクリーンショット&#34; /&gt;
+        &lt;img src=&#34;http://www.en-graphic.com/images/screenshot.png&#34; alt=&#34;スクリーンショット&#34; /&gt;
     
     
 &lt;/figure&gt;
