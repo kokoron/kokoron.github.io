@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EN.Core</title>
-    <link>http://www.en-graphic.com/index.xml</link>
+    <link>http://en-graphic.com/index.xml</link>
     <description>Recent content on EN.Core</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2017 EN Graphic Design | Follow on &lt;a href=&#34;https://twitter.com/kokoron&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 01 Apr 2017 18:21:19 +0900</lastBuildDate>
-    <atom:link href="http://www.en-graphic.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://en-graphic.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ブログ作ってみたよ</title>
-      <link>http://www.en-graphic.com/blog/first/</link>
+      <link>http://en-graphic.com/blog/first/</link>
       <pubDate>Sat, 01 Apr 2017 18:21:19 +0900</pubDate>
       
-      <guid>http://www.en-graphic.com/blog/first/</guid>
+      <guid>http://en-graphic.com/blog/first/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;でブログ作ってみた。&lt;/p&gt;
 
 &lt;p&gt;以前のブログから記事を移してみたが、あれからもう１年半経ってる。。。&lt;/p&gt;
@@ -24,25 +24,25 @@
     
     <item>
       <title>about</title>
-      <link>http://www.en-graphic.com/about/</link>
+      <link>http://en-graphic.com/about/</link>
       <pubDate>Sat, 01 Apr 2017 18:12:58 +0900</pubDate>
       
-      <guid>http://www.en-graphic.com/about/</guid>
+      <guid>http://en-graphic.com/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>初めてのPhoenix</title>
-      <link>http://www.en-graphic.com/blog/phoenix01/</link>
+      <link>http://en-graphic.com/blog/phoenix01/</link>
       <pubDate>Thu, 12 Nov 2015 00:45:30 +0900</pubDate>
       
-      <guid>http://www.en-graphic.com/blog/phoenix01/</guid>
+      <guid>http://en-graphic.com/blog/phoenix01/</guid>
       <description>&lt;h1 id=&#34;phoenix&#34;&gt;Phoenix&lt;/h1&gt;
 
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://www.en-graphic.com/images/phoenix.png&#34; alt=&#34;phoenix&#34; /&gt;
+        &lt;img src=&#34;http://en-graphic.com/images/phoenix.png&#34; alt=&#34;phoenix&#34; /&gt;
     
     
 &lt;/figure&gt;
@@ -112,7 +112,7 @@ $ mix phoenix.server
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://www.en-graphic.com/images/screenshot.png&#34; alt=&#34;スクリーンショット&#34; /&gt;
+        &lt;img src=&#34;http://en-graphic.com/images/screenshot.png&#34; alt=&#34;スクリーンショット&#34; /&gt;
     
     
 &lt;/figure&gt;
