@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="swift, ios, keyword 3" name="keywords">
+<meta content="Kokoro" name="author">
+<meta property="og:title" content="初めてのPhoenix - EN.Core">
+<meta property="og:url" content="https://blog.enw.jp/post/phoenix/">
+<meta property="og:description" content="SwiftやiOS関連の記事">
+<meta property="og:type" content="website" />
+<title>初めてのPhoenix | EN.Core</title>
+<link rel="stylesheet" href="https://blog.enw.jp/css/style.css">
+<link rel="shortcut icon" href="https://blog.enw.jp/wave.ico">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css">
+
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://blog.enw.jp"><h1 class="title is-4">EN.Core</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="level-item" href="https://github.com/kokoron" target="_blank">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://twitter.com/kokoron" target="_blank">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/index.xml" target="_blank">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">初めてのPhoenix</h1>
+    <h2 class="subtitle is-5">November 12, 2015 by Kokoro</h2>
+    
+      <div class="tags">
+    
+        <a class="button is-link" href="/tags/phoenix">Phoenix</a>
+    
+        <a class="button is-link" href="/tags/elixir">elixir</a>
+    
+</div>
+
+    
+    <div class="content">
+      <h1 id="phoenix">Phoenix</h1>
+
+
+<figure >
+    
+        <img src="/images/phoenix.png" alt="phoenix" />
+    
+    
+</figure>
+
+
+<p>友達にWebの製作を頼まれたので、せっかくなので何か新しい言語とWebフレームワーク使ってみようということで、elixirとPhoenixを始めて触ってみた。
+とりあえず <a href="http://elixir-lang.org">elixir</a> のサイトをざっくり読んでみて、なんとなくわかったつもりでPhoenix入れてみる。
+</p>
+
+<h2 id="インストール">インストール</h2>
+
+<pre><code class="language-bash">$ brew update
+$ brew install elixir
+</code></pre>
+
+<p>とりあえず <a href="http://brew.sh">Homebrew</a> で elixir をインストール （<a href="http://elixir-lang.org/install.html">出典</a>）</p>
+
+<pre><code class="language-bash">$ mix local.hex
+</code></pre>
+
+<p>Hexというものを入れる必要があるらしい</p>
+
+<pre><code class="language-bash">$ mix archive.install https://github.com/phoenixframework/phoenix/releases/download/v1.0.3/phoenix_new-1.0.3.ez
+</code></pre>
+
+<p>Phoenixのインストール</p>
+
+<p><a href="https://nodejs.org/en/">node</a>も入れておく必要があるとのこと</p>
+
+<p>（<a href="http://www.phoenixframework.org/docs/installation">出典</a>）</p>
+
+<h2 id="プロジェクト作成">プロジェクト作成</h2>
+
+<pre><code class="language-bash">$ mix phoenix.new /path/to/project --database mysql
+</code></pre>
+
+<p>今回はMySQLを使うので <code>--database mysql</code> をつけます。</p>
+
+<pre><code class="language-bash">Fetch and install dependencies? [Yn] y
+* running npm install &amp;&amp; node node_modules/brunch/bin/brunch build
+* running mix deps.get
+
+...
+
+We are all set! Run your Phoenix application:
+
+    $ cd project
+    $ mix ecto.create
+    $ mix phoenix.server
+
+You can also run your app inside IEx (Interactive Elixir) as:
+
+    $ iex -S mix phoenix.server
+</code></pre>
+
+<p>依存関係をインストールする？と聞かれるので <code>y</code> でインストールします。</p>
+
+<pre><code class="language-bash">$ cd project
+$ mix ecto.create
+$ mix phoenix.server
+</code></pre>
+
+<p>あとはメッセージに出ているまんま実行します。</p>
+
+<p><a href="http://localhost:4000">http://localhost:4000</a> をブラウザで開くと、お〜！動いてる〜＼(^o^)／</p>
+
+
+<figure >
+    
+        <img src="/images/screenshot.png" alt="スクリーンショット" />
+    
+    
+</figure>
+
+
+<p><strong>続く！</strong></p>
+    </div>
+    
+        <div class="nav-left">
+    <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.enw.jp%2fpost%2fphoenix%2f" title="Share on Facebook" target="_blank"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://plus.google.com/share?url=https%3a%2f%2fblog.enw.jp%2fpost%2fphoenix%2f" title="Share on Google+" target="_blank"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fblog.enw.jp%2fpost%2fphoenix%2f" title="Share on LinkedIn" target="_blank"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://twitter.com/home?status=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aePhoenix - https%3a%2f%2fblog.enw.jp%2fpost%2fphoenix%2f" title="Tweet this" target="_blank"><span class="fa fa-twitter fa-2x"></span></a>
+    <a class="nav-item" href="http://www.reddit.com/submit?url=https%3a%2f%2fblog.enw.jp%2fpost%2fphoenix%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aePhoenix" title="Share on Reddit" target="_blank"><span class="fa fa-reddit-alien fa-2x" aria-hidden="true"></span></a>
+    
+    </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+    <script type="text/javascript">
+      var disqus_shortname = 'kokoro';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; 2017 EN Graphic Design | Follow on <a href="https://twitter.com/kokoron" target="_blank">Twitter</a></p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/swift.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/elixir.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-96541940-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
