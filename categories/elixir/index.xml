@@ -5,16 +5,16 @@
     <link>http://www.en-graphic.com/categories/elixir/index.xml</link>
     <description>Recent content in Elixir on EN.Core</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>ja</language>
     <copyright>&amp;copy; 2017 EN Graphic Design | Follow on &lt;a href=&#34;https://twitter.com/kokoron&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;</copyright>
     <atom:link href="http://www.en-graphic.com/categories/elixir/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>初めてのPhoenix</title>
-      <link>http://www.en-graphic.com/post/phoenix/</link>
+      <link>http://www.en-graphic.com/blog/phoenix01/</link>
       <pubDate>Thu, 12 Nov 2015 00:45:30 +0900</pubDate>
       
-      <guid>http://www.en-graphic.com/post/phoenix/</guid>
+      <guid>http://www.en-graphic.com/blog/phoenix01/</guid>
       <description>&lt;h1 id=&#34;phoenix&#34;&gt;Phoenix&lt;/h1&gt;
 
 

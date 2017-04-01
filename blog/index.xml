@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>EN.Core</title>
-    <link>http://www.en-graphic.com/index.xml</link>
-    <description>Recent content on EN.Core</description>
+    <title>Blogs on EN.Core</title>
+    <link>http://www.en-graphic.com/blog/index.xml</link>
+    <description>Recent content in Blogs on EN.Core</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2017 EN Graphic Design | Follow on &lt;a href=&#34;https://twitter.com/kokoron&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 01 Apr 2017 18:21:19 +0900</lastBuildDate>
-    <atom:link href="http://www.en-graphic.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.en-graphic.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ブログ作ってみたよ</title>
@@ -20,15 +20,6 @@
 
 &lt;p&gt;以前のブログから記事を移してみたが、あれからもう１年半経ってる。。。&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>http://www.en-graphic.com/about/</link>
-      <pubDate>Sat, 01 Apr 2017 18:12:58 +0900</pubDate>
-      
-      <guid>http://www.en-graphic.com/about/</guid>
-      <description></description>
     </item>
     
     <item>

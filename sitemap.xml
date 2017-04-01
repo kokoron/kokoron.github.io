@@ -2,13 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.en-graphic.com/post/first/</loc>
-    <lastmod>2017-04-01T13:44:12+09:00</lastmod>
+    <loc>http://www.en-graphic.com/blog/first/</loc>
+    <lastmod>2017-04-01T18:21:19+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.en-graphic.com/post/phoenix/</loc>
+    <loc>http://www.en-graphic.com/about/</loc>
+    <lastmod>2017-04-01T18:12:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.en-graphic.com/blog/phoenix01/</loc>
     <lastmod>2015-11-12T00:45:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.en-graphic.com/blog/</loc>
+    <lastmod>2017-04-01T18:21:19+09:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -18,36 +29,13 @@
   
   <url>
     <loc>http://www.en-graphic.com/</loc>
-    <lastmod>2017-04-01T13:44:12+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.en-graphic.com/tags/elixir/</loc>
-    <lastmod>2015-11-12T00:45:30+09:00</lastmod>
+    <lastmod>2017-04-01T18:21:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://www.en-graphic.com/categories/elixir/</loc>
     <lastmod>2015-11-12T00:45:30+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.en-graphic.com/tags/phoenix/</loc>
-    <lastmod>2015-11-12T00:45:30+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.en-graphic.com/post/</loc>
-    <lastmod>2017-04-01T13:44:12+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.en-graphic.com/tags/</loc>
     <priority>0</priority>
   </url>
   
