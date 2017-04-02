@@ -7,8 +7,132 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2017 EN Graphic Design | Follow on &lt;a href=&#34;https://twitter.com/kokoron&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 01 Apr 2017 18:21:19 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 02 Apr 2017 15:19:26 +0900</lastBuildDate>
     <atom:link href="http://en-graphic.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>初めてのVapor</title>
+      <link>http://en-graphic.com/blog/vapor1/</link>
+      <pubDate>Sun, 02 Apr 2017 15:19:26 +0900</pubDate>
+      
+      <guid>http://en-graphic.com/blog/vapor1/</guid>
+      <description>&lt;p&gt;先日 try! Swift に行ってきたんですが、話題として結構サーバーサイドSwiftの話も出ていて、サーバー弱者な僕としても少しくらいはサーバーサイドのこともわかっておかないとなあ・・・と思いサーバーサイドSwiftを試しにやってみようかと思い立ち、試しにVaporを触ってみた話です。
+&lt;/p&gt;
+
+&lt;p&gt;とりあえずインストールからherokuにデプロイするまでをやってみました。&lt;/p&gt;
+
+&lt;h2 id=&#34;まずはvaporのインストール&#34;&gt;まずはVaporのインストール&lt;/h2&gt;
+
+&lt;p&gt;まずはXCode8をインストールします。ていうかもう入ってます。&lt;/p&gt;
+
+&lt;p&gt;ターミナルで以下のコマンドで環境をチェック。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ curl -sL check.vapor.sh | bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Toolboxをインストール&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ curl -sL toolbox.vapor.sh | bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;app作成&#34;&gt;App作成&lt;/h2&gt;
+
+&lt;p&gt;新規Appを作成します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ vapor new TestBot
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;
+                                                 **
+                                               **~~**
+                                             **~~~~~~**
+                                           **~~~~~~~~~~**
+                                         **~~~~~~~~~~~~~~**
+                                       **~~~~~~~~~~~~~~~~~~**
+                                     **~~~~~~~~~~~~~~~~~~~~~~**
+                                    **~~~~~~~~~~~~~~~~~~~~~~~~**
+                                   **~~~~~~~~~~~~~~~~~~~~~~~~~~**
+                                  **~~~~~~~~~~~~~~~~~~~~~~~~~~~~**
+                                  **~~~~~~~~~~~~~~~~~~~~~~~~~~~~**
+                                  **~~~~~~~~~~~~~~~~~~~~~++++~~~**
+                                   **~~~~~~~~~~~~~~~~~~~++++~~~**
+                                    ***~~~~~~~~~~~~~~~++++~~~***
+                                      ****~~~~~~~~~~++++~~****
+                                         *****~~~~~~~~~*****
+                                            *************
+
+                                   _       __    ___   ___   ___
+                                  \ \  /  / /\  | |_) / / \ | |_)
+                                   \_\/  /_/--\ |_|   \_\_/ |_| \
+                                     a web framework for Swift
+
+                               Project &amp;quot;TestBot&amp;quot; has been created.
+                        Type `cd TestBot` to enter the project directory.
+                                               Enjoy!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd TestBot
+$ vapor build
+$ vapor run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ディレクトリ内に移動して&lt;code&gt;build&lt;/code&gt;して&lt;code&gt;run&lt;/code&gt;します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;Running RedishBot...
+No command supplied, defaulting to serve...
+No preparations.
+Server &#39;default&#39; starting at 0.0.0.0:8080
+GET /
+GET /styles/app.css
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://localhost:8080&#34;&gt;http://localhost:8080&lt;/a&gt; をブラウザで開くと&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://en-graphic.com/images/vapor1/ss2017-04-02-15.38.43.png&#34; alt=&#34;スクリーンショット&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;おお！動いてる！&lt;/p&gt;
+
+&lt;h2 id=&#34;herokuにdeploy&#34;&gt;herokuにDeploy&lt;/h2&gt;
+
+&lt;p&gt;上記Appのリポジトリを作り&lt;/p&gt;
+
+&lt;p&gt;herokuにログイン&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ heroku login
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Appを作成して&lt;code&gt;buildpack&lt;/code&gt;を設定してherokuにmasterをpushします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ heroku create
+$ heroku buildpacks:set https://github.com/kylef/heroku-buildpack-swift
+$ git push heroku master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;しばらく待つと&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;remote: Verifying deploy... done.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;となるので、&lt;code&gt;https://xxxxxxxxxx.herokuapp.com/&lt;/code&gt;（さっき作ったherokuのアドレス）をブラウザで開くと・・・&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://en-graphic.com/images/vapor1/ss2017-04-02-15.52.44.png&#34; alt=&#34;スクリーンショット&#34; /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;おお！(；´Д｀) 動いてる！！&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>ブログ作ってみたよ</title>

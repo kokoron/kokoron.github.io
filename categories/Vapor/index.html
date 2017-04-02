@@ -1,11 +1,19 @@
+
+
+
+    
+        
+    
+
+
+
+
 <!DOCTYPE HTML>
 
 <html>
     <head>
         
-            
-                <title>EN.Core</title>
-            
+            <title>Vapor Posts - EN.Core</title>
         
 
         <meta charset="utf-8" />
@@ -22,10 +30,10 @@
         
 
         
-        <meta property="og:title" content="EN.Core" />
+        <meta property="og:title" content="Vapor" />
 <meta property="og:description" content="SwiftやiOS関連の記事" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://en-graphic.com/" />
+<meta property="og:url" content="http://en-graphic.com/categories/vapor/" />
 
 
 
@@ -41,7 +49,7 @@
 
 
         
-<meta itemprop="name" content="EN.Core">
+<meta itemprop="name" content="Vapor">
 <meta itemprop="description" content="SwiftやiOS関連の記事">
 
 
@@ -93,10 +101,9 @@ ga('send', 'pageview');
         <div id="wrapper">
 
     
-    
 <header id="header">
     
-        <h1><a href="/">EN.Core</i></a></h1>
+        <h2><a href="/">EN.Core</i></a></h2>
     
 
     <nav class="links">
@@ -125,10 +132,6 @@ ga('send', 'pageview');
     </nav>
     <nav class="main">
         <ul>
-            
-            <li id="share-nav" class="share-menu" style="display:none;">
-                <a class="fa-share-alt" href="#share-menu">Share</a>
-            </li>
             
             <li class="search">
                 <a class="fa-search" href="#search">Search</a>
@@ -219,6 +222,8 @@ ga('send', 'pageview');
 
     
     <div id="main">
+        <h1>Vapor</h1>
+        
         
             <article class="post">
     <header>
@@ -246,177 +251,15 @@ ga('send', 'pageview');
     </div>
 </header>
 
-
-    <section id="social-share">
-        <ul class="icons">
-            
-
-
-<li><a href="//twitter.com/share?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f&text=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeVapor&via=kokoron" target="_blank" class="share-btn twitter">
-    <i class="fa fa-twitter"></i>
-    <p>Twitter</p>
-</a></li>
-
-
-<li><a href="//plus.google.com/share?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f" target="_blank" class="share-btn google-plus">
-    <i class="fa fa-google-plus"></i>
-    <p>Google+</p>
-</a></li>
-
-
-<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f" target="_blank" class="share-btn facebook">
-    <i class="fa fa-facebook"></i>
-    <p>Facebook</p>
-</a></li>
-
-
-<li><a href="//reddit.com/submit?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeVapor" target="_blank" class="share-btn reddit">
-    <i class="fa fa-reddit-alien"></i>
-    <p>Reddit</p>
-</a></li>
-
-
-<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeVapor" target="_blank" class="share-btn linkedin">
-    <i class="fa fa-linkedin"></i>
-    <p>LinkedIn</p>
-</a></li>
-
-
-<li><a href="//www.stumbleupon.com/submit?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeVapor" target="_blank" class="share-btn stumbleupon">
-    <i class="fa fa-stumbleupon"></i>
-    <p>StumbleUpon</p>
-</a></li>
-
-
-<li><a href="mailto:?subject=Check out this post by Kokoro&body=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f" target="_blank" class="share-btn email">
-    <i class="fa fa-envelope"></i>
-    <p>Email</p>
-</a></li>
-
-        </ul>
-    </section>
     
 
-    <div id="content">
-        <p>先日 try! Swift に行ってきたんですが、話題として結構サーバーサイドSwiftの話も出ていて、サーバー弱者な僕としても少しくらいはサーバーサイドのこともわかっておかないとなあ・・・と思いサーバーサイドSwiftを試しにやってみようかと思い立ち、試しにVaporを触ってみた話です。
+    <p>先日 try! Swift に行ってきたんですが、話題として結構サーバーサイドSwiftの話も出ていて、サーバー弱者な僕としても少しくらいはサーバーサイドのこともわかっておかないとなあ・・・と思いサーバーサイドSwiftを試しにやってみようかと思い立ち、試しにVaporを触ってみた話です。
 </p>
 
-<p>とりあえずインストールからherokuにデプロイするまでをやってみました。</p>
-
-<h2 id="まずはvaporのインストール">まずはVaporのインストール</h2>
-
-<p>まずはXCode8をインストールします。ていうかもう入ってます。</p>
-
-<p>ターミナルで以下のコマンドで環境をチェック。</p>
-
-<pre><code class="language-bash">$ curl -sL check.vapor.sh | bash
-</code></pre>
-
-<p>Toolboxをインストール</p>
-
-<pre><code class="language-bash">$ curl -sL toolbox.vapor.sh | bash
-</code></pre>
-
-<h2 id="app作成">App作成</h2>
-
-<p>新規Appを作成します。</p>
-
-<pre><code class="language-bash">$ vapor new TestBot
-</code></pre>
-
-<pre><code class="language-bash">
-                                                 **
-                                               **~~**
-                                             **~~~~~~**
-                                           **~~~~~~~~~~**
-                                         **~~~~~~~~~~~~~~**
-                                       **~~~~~~~~~~~~~~~~~~**
-                                     **~~~~~~~~~~~~~~~~~~~~~~**
-                                    **~~~~~~~~~~~~~~~~~~~~~~~~**
-                                   **~~~~~~~~~~~~~~~~~~~~~~~~~~**
-                                  **~~~~~~~~~~~~~~~~~~~~~~~~~~~~**
-                                  **~~~~~~~~~~~~~~~~~~~~~~~~~~~~**
-                                  **~~~~~~~~~~~~~~~~~~~~~++++~~~**
-                                   **~~~~~~~~~~~~~~~~~~~++++~~~**
-                                    ***~~~~~~~~~~~~~~~++++~~~***
-                                      ****~~~~~~~~~~++++~~****
-                                         *****~~~~~~~~~*****
-                                            *************
-
-                                   _       __    ___   ___   ___
-                                  \ \  /  / /\  | |_) / / \ | |_)
-                                   \_\/  /_/--\ |_|   \_\_/ |_| \
-                                     a web framework for Swift
-
-                               Project &quot;TestBot&quot; has been created.
-                        Type `cd TestBot` to enter the project directory.
-                                               Enjoy!
-</code></pre>
-
-<pre><code class="language-bash">$ cd TestBot
-$ vapor build
-$ vapor run
-</code></pre>
-
-<p>ディレクトリ内に移動して<code>build</code>して<code>run</code>します。</p>
-
-<pre><code class="language-bash">Running RedishBot...
-No command supplied, defaulting to serve...
-No preparations.
-Server 'default' starting at 0.0.0.0:8080
-GET /
-GET /styles/app.css
-</code></pre>
-
-<p><a href="http://localhost:8080">http://localhost:8080</a> をブラウザで開くと</p>
-
-
-<figure >
-    
-        <img src="/images/vapor1/ss2017-04-02-15.38.43.png" alt="スクリーンショット" />
-    
-    
-</figure>
-
-
-<p>おお！動いてる！</p>
-
-<h2 id="herokuにdeploy">herokuにDeploy</h2>
-
-<p>上記Appのリポジトリを作り</p>
-
-<p>herokuにログイン</p>
-
-<pre><code class="language-bash">$ heroku login
-</code></pre>
-
-<p>Appを作成して<code>buildpack</code>を設定してherokuにmasterをpushします。</p>
-
-<pre><code class="language-bash">$ heroku create
-$ heroku buildpacks:set https://github.com/kylef/heroku-buildpack-swift
-$ git push heroku master
-</code></pre>
-
-<p>しばらく待つと</p>
-
-<pre><code class="language-bash">remote: Verifying deploy... done.
-</code></pre>
-
-<p>となるので、<code>https://xxxxxxxxxx.herokuapp.com/</code>（さっき作ったherokuのアドレス）をブラウザで開くと・・・</p>
-
-
-<figure >
-    
-        <img src="/images/vapor1/ss2017-04-02-15.52.44.png" alt="スクリーンショット" />
-    
-    
-</figure>
-
-
-<p>おお！(；´Д｀) 動いてる！！</p>
-    </div>
-
     <footer>
+        <ul class="actions">
+            <li><a href="http://en-graphic.com/blog/vapor1/" class="button big">Continue Reading</a></li>
+        </ul>
         <ul class="stats">
     
         
@@ -450,94 +293,20 @@ $ git push heroku master
 
     </footer>
 </article>
+
+        
+
+        
 <ul class="actions pagination">
     
-        <li><a href="http://en-graphic.com/blog/first/"
-                class="button big previous">ブログ作ってみたよ</a></li>
+        <li><a href="#" class="disabled button big previous">Previous Page</a></li>
     
 
+    
+        <li><a href="#" class="disabled button big next">Next Page</a></li>
     
 </ul>
 
-
-
-    
-        <article class="post">
-            <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'kokoro';
-    var disqus_identifier = 'http:\/\/en-graphic.com\/blog\/vapor1\/';
-    var disqus_title = '初めてのVapor';
-    var disqus_url = 'http:\/\/en-graphic.com\/blog\/vapor1\/';
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </article>
-    
-
-
-
-            <section id="share-menu">
-    <section id="social-share-nav">
-        <ul class="links">
-            <header>
-                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
-            </header>
-            
-
-
-<li><a href="//twitter.com/share?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f&text=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeVapor&via=kokoron" target="_blank" class="share-btn twitter">
-    <i class="fa fa-twitter"></i>
-    <p>Twitter</p>
-</a></li>
-
-
-<li><a href="//plus.google.com/share?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f" target="_blank" class="share-btn google-plus">
-    <i class="fa fa-google-plus"></i>
-    <p>Google+</p>
-</a></li>
-
-
-<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f" target="_blank" class="share-btn facebook">
-    <i class="fa fa-facebook"></i>
-    <p>Facebook</p>
-</a></li>
-
-
-<li><a href="//reddit.com/submit?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeVapor" target="_blank" class="share-btn reddit">
-    <i class="fa fa-reddit-alien"></i>
-    <p>Reddit</p>
-</a></li>
-
-
-<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeVapor" target="_blank" class="share-btn linkedin">
-    <i class="fa fa-linkedin"></i>
-    <p>LinkedIn</p>
-</a></li>
-
-
-<li><a href="//www.stumbleupon.com/submit?url=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f&title=%e5%88%9d%e3%82%81%e3%81%a6%e3%81%aeVapor" target="_blank" class="share-btn stumbleupon">
-    <i class="fa fa-stumbleupon"></i>
-    <p>StumbleUpon</p>
-</a></li>
-
-
-<li><a href="mailto:?subject=Check out this post by Kokoro&body=http%3a%2f%2fen-graphic.com%2fblog%2fvapor1%2f" target="_blank" class="share-btn email">
-    <i class="fa fa-envelope"></i>
-    <p>Email</p>
-</a></li>
-
-        </ul>
-    </section>
-</section>
-
-        
     </div>
     
 <section id="sidebar">
@@ -558,7 +327,7 @@ $ git push heroku master
             
             <ul class="icons">
                 
-                    <li><a href="http://en-graphic.com/index.xml" type="application/rss+xml"
+                    <li><a href="http://en-graphic.com/categories/vapor/index.xml" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
                 
                 
@@ -733,7 +502,7 @@ $ git push heroku master
         <section id="footer">
             <ul class="icons">
                 
-                    <li><a href="http://en-graphic.com/index.xml" type="application/rss+xml"
+                    <li><a href="http://en-graphic.com/categories/vapor/index.xml" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
                 
                 
